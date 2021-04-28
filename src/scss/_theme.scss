@@ -1,0 +1,33 @@
+/* Testimonials Section */
+.Testimonials {
+  height: 560px;
+  background: #f7f7f7;
+  padding: 84px;
+  z-index: -1;
+  position: relative;
+}
+
+@media (max-width: 1056px) {
+  .Testimonials {
+    padding: 84px 16px;
+  }
+}
+
+
+/* Contact Section */
+.Contact {
+  height: 480px;
+  text-align: center;
+  background: url('../assets/form-bg.jpg');
+  color: #fff;
+  padding: 64px 84px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 941px) {
+  .Contact {
+    padding: 64px 16px;
+    height: auto;
+  }
+}

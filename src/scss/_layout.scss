@@ -1,0 +1,180 @@
+$dark-black: #171513;
+
+/* Header Section */
+.Nav {
+  height: 70px;
+  background-color: $dark-black;
+  padding: 0 16px;
+  display: flex;
+}
+
+.Nav__links__container {
+  flex-direction: column;
+}
+
+@media (min-width: 1020px) {
+  .Nav {
+    padding: 0 83px;
+  }
+
+  .Nav__links__container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+
+
+/* Landing Section */
+.Landing {
+  height: 697px;
+  background: url('../assets/landing.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  position: relative;
+  padding: 0 16px;
+}
+
+.Landing__card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+@media (max-width: 770px) {
+  .Landing__card-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+
+
+/* About Section */
+.About {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+  padding: 84px;
+}
+
+@media (max-width: 1277px) {
+  .About {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 1rem;
+    padding: 84px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 940px) {
+  .About {
+    padding: 84px 16px;
+  }
+}
+
+
+
+/* Testomonials Section */
+.Testimonials__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.7rem;
+  align-items: start;
+}
+
+.Testimonials__icon {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1500px) {
+  .Testimonials__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Testimonials__container__NoDisplayOne {
+    display: none;
+  }
+}
+
+@media (max-width: 1056px) {
+  .Testimonials__container {
+    grid-template-columns: 1fr;
+  }
+
+  .Testimonials__container__NoDisplayTwo {
+    display: none;
+  }
+}
+
+
+/* Contact Section */
+.Contact__form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    'name email phone' 
+    'message message message' 
+    '. submit .';
+  grid-gap: 1rem;
+  margin: auto;
+  width: 770px;
+}
+
+.Contact__form__name {
+  grid-area: name;
+}
+
+.Contact__form__email {
+  grid-area: email;
+}
+
+.Contact__form__phone {
+  grid-area: phone;
+}
+
+.Contact__form__textarea {
+  grid-area: message;
+}
+
+@media (max-width: 818px) {
+  .Contact__form {
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'name' 'email' 'phone' 'message' 'submit';
+  }
+}
+
+
+/* Footer Section */
+.Footer {
+  height: 98px;
+  background-color: $dark-black;
+  padding: 0 84px;
+  color: #afa5a3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .8rem;
+}
+
+.Footer__links {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: .5rem;
+}
+
+@media (max-width: 596px) {
+  .Footer {
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: 139px;
+    text-align: center;
+    padding: 0 16px;
+  }
+}

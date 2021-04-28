@@ -1,0 +1,54 @@
+$white-color: #fff;
+$orange-color: #ee3b00;
+
+/* Header Section */
+.Nav__link__a:hover {
+  color: $white-color;
+}
+
+.Nav__link__a.active {
+  color: $white-color;
+}
+
+.Nav__button:hover {
+  background-color: $white-color;
+  color: $orange-color;
+}
+
+
+
+/* Testimonials Section */
+.Testimonials__chatbox:after {
+  top: 100%;
+  left: 48px;
+  border: solid transparent;
+  content:" ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: $white-color;
+  border-width: 18px;
+  margin-left: 4px;
+}
+
+.Testimonials__chatbox:before {
+  content: '';
+  position: absolute;
+  transform: rotate(45deg);
+  width: 36px;
+  height: 36px;
+  bottom: -12px;
+  z-index: -1;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
+}
+
+
+
+/* Contact Section */
+.Contact__form__submit:hover {
+  color: $orange-color;
+  background: $white-color;
+}
